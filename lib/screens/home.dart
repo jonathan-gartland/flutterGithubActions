@@ -55,18 +55,12 @@ class ItemTile extends StatelessWidget {
         ),
         trailing: IconButton(
           key: Key('icon_$itemNo'),
-          icon: favoritesList.items.contains(itemNo)
-              ? const Icon(Icons.favorite)
-              : const Icon(Icons.favorite_border),
+          icon: favoritesList.items.contains(itemNo) ? const Icon(Icons.favorite) : const Icon(Icons.favorite_border),
           onPressed: () {
-            !favoritesList.items.contains(itemNo)
-                ? favoritesList.add(itemNo)
-                : favoritesList.remove(itemNo);
+            !favoritesList.items.contains(itemNo) ? favoritesList.add(itemNo) : favoritesList.remove(itemNo);
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(favoritesList.items.contains(itemNo)
-                    ? 'Added to favorites.'
-                    : 'Removed from favorites.'),
+                content: Text(favoritesList.items.contains(itemNo) ? 'Added to favorites.' : 'Removed from favorites.'),
                 duration: const Duration(seconds: 1),
               ),
             );

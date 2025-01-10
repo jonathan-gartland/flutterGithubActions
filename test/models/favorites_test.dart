@@ -19,5 +19,4 @@ void main() {
       expect(favorites.items.contains(number), false);
     });
   });
-
 }
