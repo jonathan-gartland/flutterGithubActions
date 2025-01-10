@@ -23,6 +23,7 @@ dev_dependencies:
     sdk: flutter
   husky: ^0.1.7
   lint_staged: ^0.5.1
+  dart_style: ^3.0.1
 
 flutter:
   uses-material-design: true
