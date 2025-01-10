@@ -29,4 +29,4 @@ flutter:
   uses-material-design: true
 
 lint_staged:
-  'lib/**.dart': dart format -l 120 && dart analyze --fatal-infos --fatal-warnings dart fix --apply
+  'lib/**.dart': dart format -l 120 && dart analyze --fatal-infos --fatal-warnings .
