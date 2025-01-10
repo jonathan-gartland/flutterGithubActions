@@ -21,6 +21,7 @@ dev_dependencies:
     sdk: flutter
   integration_test:
     sdk: flutter
+  husky: ^0.1.7
 
 flutter:
   uses-material-design: true
